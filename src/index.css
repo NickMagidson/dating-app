@@ -35,6 +35,16 @@ nav {
     justify-content: space-between;
 }
 
+nav .nav-button {
+    color: rgb(254, 48, 114);
+    background-color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+}
+
 nav .logo-container {
     width: 170px;
     margin: 15px;
