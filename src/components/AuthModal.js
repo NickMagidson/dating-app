@@ -9,17 +9,24 @@ const AuthModal = ({ setShowModal }) => {
 
     console.log(email, password, confirmPassword)
 
+    const isSignUp = true;
+
     const handleClick = () => {
         setShowModal(false)
     }
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        try {
+            if( isSignUp && ( password !== confirmPassword )) {
+                setError('Passwords do not match!')
+            }
+            console.log('make a post request to our database')
+        } catch (error) {
+            console.log(error);
+        }
     }
 
-    
-
-    const isSignUp = true
 
     return (
         <div className="auth-modal">
